@@ -35,10 +35,6 @@ public class CardDesk {
                 .count();
     }
 
-    private static void convertAceToQueen(Deck deckOne) {
-        deckOne.replaceRank(Rank.ACE, Rank.QUEEN);
-    }
-
     private static void printPackContents(Deck deck) {
         ArrayList<Card> pack = deck.getDeck();
         pack.forEach(item -> System.out.println(item.getRank() + " of " + item.getSuit()));
